@@ -39,8 +39,6 @@
 # java
 ## spring cloud
 ### config
-关于认证的配置
-1. eureka
 
 
 ## Welcome to GitHub Pages
