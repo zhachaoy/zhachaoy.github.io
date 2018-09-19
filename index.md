@@ -1,3 +1,48 @@
+# iaas
+## opentack
+## vmware vsphere
+
+# python
+## keystone
+## netbox
+
+# network
+## L2
+## L4
+## load balance
+## proxy
+## sdn
+
+# devops
+## basic build
+### packer
+### vagrant
+
+## ias
+### terraform
+### cloud formation
+### ros 
+
+## container
+### docker
+### mesos
+### kubernetes
+
+## env config
+### cloud init
+### ansible
+### chef
+### puppet
+
+## jenkins
+
+# java
+## spring cloud
+### config
+关于认证的配置
+1. eureka
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/zhachaoy/zhachaoy.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
