@@ -1,4 +1,4 @@
-# Welcome to git-wiki demo
+# Devops
 
 This is a [demo](wiki/Demo.md) of git-wiki theme for jekyll.
 
@@ -19,7 +19,7 @@ You can fork/copy the master branch now and start your wiki in just 1 minute.
 **Note:**
 You can even include the github wiki as a submodule and enable the conf, but it's an experimental feature and it implies less advantages and greater disadvantages for now.
 
-## Who is using git-wiki
+## Basic Build
 
 [List of git-wiki installations](wiki/examples.md)
 
@@ -29,7 +29,7 @@ You can even include the github wiki as a submodule and enable the conf, but it'
 ### [share your wiki with us!](wiki/examples.md) and keep the "Power by Git-Wiki" footer link please. It will help both of us!
 
 
-## Installation instructions
+## IaC
 
 1. Fork or copy [this repository](https://github.com/drassil/git-wiki)
 
@@ -45,11 +45,11 @@ You can even include the github wiki as a submodule and enable the conf, but it'
 
 We suggest the creation of a /wiki/ subfolder that collects all your .md pages (except index.md)
 
-## Current known limitations
+## Container
 
 * You can't use the wiki internal link format: [[example]]. Please, use gh-pages links instead: \[example\](example) . It's a known jekyll limitation: <https://jekyllrb.com/docs/templates/>
 
-## Customization
+## Env Config
 
 You can create following files in _includes folder to costumize git-wiki without patching original code:
 
@@ -58,13 +58,13 @@ You can create following files in _includes folder to costumize git-wiki without
 * comments.html -> this is mostly used to integrate social comments under page contents
 * footer.html -> this file will be included in left side of the footer.
 
-## Looking for collaboration
+## Jenkins
 
 Do you like this project? then, contact us via [chat](https://gitter.im/Drassil/general?utm_source=share-link&utm_medium=link&utm_campaign=share-link) , <a href="mailto:staff-drassil@googlegroups.com">email</a>  or send us a PR to improve it.
 
 Thank you!
 
-## Components used
+## IaaS
 
 - [jekyll-table-of-contents](https://github.com/ghiculescu/jekyll-table-of-contents)
 
@@ -72,3 +72,13 @@ Thank you!
 
 
 [MIT LICENSE](LICENSE)
+
+## PaaS
+
+## Python
+
+## Java
+
+## Network
+
+## Linux
