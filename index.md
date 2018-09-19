@@ -18,7 +18,7 @@
 
 # basic build
 ## packer
-### vagrant
+## vagrant
 
 # ias
 ## terraform
