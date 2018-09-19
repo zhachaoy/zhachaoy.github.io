@@ -10,8 +10,6 @@
 ## load balance
 ## proxy
 ## sdn
-# devops
-## roadmap
 # basicbuild
 ## packer
 ## vagrant
