@@ -1,3 +1,10 @@
+# chaoyi-wiki
+
+This is a [demo](wiki/Demo.md) of git-wiki theme for jekyll.
+
+it's a full featured wiki powered by git, github pages and pull-requests!
+
+
 # Devops
 
 This is a [demo](wiki/Demo.md) of git-wiki theme for jekyll.
@@ -64,7 +71,7 @@ Do you like this project? then, contact us via [chat](https://gitter.im/Drassil/
 
 Thank you!
 
-## IaaS
+# IaaS
 
 - [jekyll-table-of-contents](https://github.com/ghiculescu/jekyll-table-of-contents)
 
@@ -73,12 +80,12 @@ Thank you!
 
 [MIT LICENSE](LICENSE)
 
-## PaaS
+# PaaS
 
-## Python
+# Python
 
-## Java
+# Java
 
-## Network
+# Network
 
-## Linux
+# Linux
