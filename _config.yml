@@ -2,7 +2,6 @@ title: chaoyi-wiki
 description: zhachaoy@163.com
 comments: true
 logo_url: https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png
-use_github_wiki: true
 custom_sidebar: true
 gems:
   - jekyll-sitemap
