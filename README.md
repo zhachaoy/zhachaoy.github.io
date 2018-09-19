@@ -26,20 +26,18 @@ You can even include the github wiki as a submodule and enable the conf, but it'
 [List of forked repository](https://github.com/Drassil/git-wiki/network/members)
 
 
-### [share your wiki with us!](wiki/examples.md) and keep the "Power by Git-Wiki" footer link please. It will help both of us!
+### Packer
+
+### Vagrant
 
 
 ## IaC
 
-1. Fork or copy [this repository](https://github.com/drassil/git-wiki)
+### Terraform
 
-2. copy and rename _config.yml.dist in _config.yml changing settings inside
+### CloudFormation
 
-3. create your index.md in root directory
-
-4. push your changes in your repository, then configure the github pages in your repository settings
-
-5. Your wiki is ready!
+### ROS
 
 **Note:**
 
@@ -49,6 +47,12 @@ We suggest the creation of a /wiki/ subfolder that collects all your .md pages (
 
 * You can't use the wiki internal link format: [[example]]. Please, use gh-pages links instead: \[example\](example) . It's a known jekyll limitation: <https://jekyllrb.com/docs/templates/>
 
+### Docker
+
+### Mesos
+
+### Kubernetes
+
 ## Env Config
 
 You can create following files in _includes folder to costumize git-wiki without patching original code:
@@ -57,6 +61,14 @@ You can create following files in _includes folder to costumize git-wiki without
 * sidebar.html -> this file will be included in left sidebar allowing you to create your widgets
 * comments.html -> this is mostly used to integrate social comments under page contents
 * footer.html -> this file will be included in left side of the footer.
+
+### Cloud-Init
+
+### Ansible
+
+### Chef
+
+### Puppet
 
 ## Jenkins
 
