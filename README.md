@@ -32,6 +32,7 @@ You can even include the github wiki as a submodule and enable the conf, but it'
 ## iac
 
 ### terraform
+provider provision env (org-buss-app)
 
 ### cloudformation
 
@@ -70,9 +71,23 @@ You can create following files in _includes folder to costumize git-wiki without
 
 ## jenkins
 
+# 运维体系
 Do you like this project? then, contact us via [chat](https://gitter.im/Drassil/general?utm_source=share-link&utm_medium=link&utm_campaign=share-link) , <a href="mailto:staff-drassil@googlegroups.com">email</a>  or send us a PR to improve it.
 
 Thank you!
+
+## 标准化
+文档, 流程
+
+## 工具化
+脚本库, 工具库
+
+## 平台化
+统一web管理控制
+提供标准API
+
+## 智能化
+按照场景智能管理, 态势感知
 
 # iaas
 
@@ -86,6 +101,8 @@ Thank you!
 ## openstack
 
 ## vmware vsphere
+
+## 公有云
 
 # paas
 
