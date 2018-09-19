@@ -25,11 +25,9 @@ You can even include the github wiki as a submodule and enable the conf, but it'
 
 [List of forked repository](https://github.com/Drassil/git-wiki/network/members)
 
-
 ### Packer
 
 ### Vagrant
-
 
 ## IaC
 
@@ -87,10 +85,31 @@ Thank you!
 
 # PaaS
 
+# Linux
+
+# Network
+
 # Python
 
 # Java
 
-# Network
+## Spring Cloud
+### 认证相关
+1.eureka配置认证信息，启用后后服务注册时将会进行验证
+```application.yml
+security:
+  basic:
+    enabled: true
+  user:
+    name: eureka
+    password: iotbull
+```
+2.config配置认证信息
+```application.yml
+security:
+  user:
+    name: admin
+    password: 'admin'
+```
 
-# Linux
+
