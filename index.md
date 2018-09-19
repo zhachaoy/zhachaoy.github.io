@@ -1,10 +1,3 @@
-# chaoyi-wiki
-
-This is a [demo](wiki/Demo.md) of git-wiki theme for jekyll.
-
-it's a full featured wiki powered by git, github pages and pull-requests!
-
-
 # Devops
 
 This is a [demo](wiki/Demo.md) of git-wiki theme for jekyll.
