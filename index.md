@@ -1,6 +1,3 @@
-# chaoyi_wiki
-整理知识体系
-
 # Devops
 
 This is a [demo](wiki/Demo.md) of git-wiki theme for jekyll.
