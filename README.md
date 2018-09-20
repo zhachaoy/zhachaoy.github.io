@@ -71,7 +71,7 @@ You can create following files in _includes folder to costumize git-wiki without
 
 ## jenkins
 
-# ops
+# 运维
 Do you like this project? then, contact us via [chat](https://gitter.im/Drassil/general?utm_source=share-link&utm_medium=link&utm_campaign=share-link) , <a href="mailto:staff-drassil@googlegroups.com">email</a>  or send us a PR to improve it.
 
 Thank you!
@@ -117,7 +117,7 @@ Thank you!
 
 ## paas
 
-# dev
+# 开发
 
 ## 架构
 
@@ -169,7 +169,7 @@ Thank you!
 
 ## 内核/shell
 
-# network
+# 网络
 
 ## l2
 
@@ -183,7 +183,7 @@ Thank you!
 
 ## cdn
 
-# middleware
+# 中间件
 
 ## db
 
