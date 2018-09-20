@@ -1,6 +1,6 @@
-# spring cloud
+# spring cloud 安全认证
 
-1.eureka配置认证信息，启用后后服务注册时将会进行验证
+1.eureka配置认证信息, 启用后后服务注册时将会进行验证
 ```application.yml
 security:
   basic:
