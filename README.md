@@ -19,20 +19,18 @@ You can even include the github wiki as a submodule and enable the conf, but it'
 
 ## basic build
 
-[List of forked repository](https://github.com/Drassil/git-wiki/network/members)
+- [packer](wiki/java/spring_cloud_config.md)
 
-### packer
-
-### vagrant
+- [vagrant](wiki/java/spring_cloud_config.md)
 
 ## iac
 
-### terraform
 provider provision env (org-buss-app)
+- [terraform](wiki/java/spring_cloud_config.md)
 
-### cloudformation
+- [cloudformation](wiki/java/spring_cloud_config.md)
 
-### ros
+- [ros](wiki/java/spring_cloud_config.md)
 
 **Note:**
 
@@ -42,11 +40,11 @@ We suggest the creation of a /wiki/ subfolder that collects all your .md pages (
 
 * You can't use the wiki internal link format: [[example]]. Please, use gh-pages links instead: \[example\](example) . It's a known jekyll limitation: <https://jekyllrb.com/docs/templates/>
 
-### docker
+- [docker](wiki/java/spring_cloud_config.md)
 
-### mesos
+- [mesos](wiki/java/spring_cloud_config.md)
 
-### kubernetes
+- [kubernetes](wiki/java/spring_cloud_config.md)
 
 ## env config
 
@@ -57,13 +55,13 @@ You can create following files in _includes folder to costumize git-wiki without
 * comments.html -> this is mostly used to integrate social comments under page contents
 * footer.html -> this file will be included in left side of the footer.
 
-### cloud-init
+- [cloud-init](wiki/java/spring_cloud_config.md)
 
-### ansible
+- [ansible](wiki/java/spring_cloud_config.md)
 
-### chef
+- [chef](wiki/java/spring_cloud_config.md)
 
-### puppet
+- [puppet](wiki/java/spring_cloud_config.md)
 
 ## jenkins
 
@@ -71,42 +69,33 @@ You can create following files in _includes folder to costumize git-wiki without
 
 ## 运维体系
 
-### 标准化
 文档, 流程
+- [标准化](wiki/java/spring_cloud_config.md)
 
-### 工具化
 脚本库, 工具库
+- [工具化](wiki/java/spring_cloud_config.md)
 
-### 平台化
-统一web管理控制
-提供标准API
+统一web管理控制，提供标准API
+- [平台化](wiki/java/spring_cloud_config.md)
 
-### 智能化
 按照场景智能管理, 态势感知
+- [智能化](wiki/java/spring_cloud_config.md)
 
 ## 运维模式
 
-### pet
 宠物模式, 随着服务增加管理成本也会增加
+- [pet](wiki/java/spring_cloud_config.md)
 
-### cattle
 牲口模式, 很好的处理服务增加成本
-
+- [cattle](wiki/java/spring_cloud_config.md)
 
 ## iaas
 
-- [jekyll-table-of-contents](https://github.com/ghiculescu/jekyll-table-of-contents)
+- [openstack](wiki/java/spring_cloud_config.md)
 
-- [jQuery](https://jquery.com/)
+- [vmware vsphere](wiki/java/spring_cloud_config.md)
 
-
-[MIT LICENSE](LICENSE)
-
-### openstack
-
-### vmware vsphere
-
-### 公有云
+- [公有云](wiki/java/spring_cloud_config.md)
 
 ## paas
 
@@ -114,15 +103,15 @@ You can create following files in _includes folder to costumize git-wiki without
 
 ## 架构
 
-### servicemesh
+- [servicemesh](wiki/java/spring_cloud_config.md)
 
-### 微服务
+- [微服务](wiki/java/spring_cloud_config.md)
 
 ## 编码规范
 
 ## 版本控制
 
-### git
+- [git](wiki/java/spring_cloud_config.md)
 
 ## 单元测试
 
@@ -130,35 +119,35 @@ You can create following files in _includes folder to costumize git-wiki without
 
 ## cpu
 
-### 运行级别
+- [运行级别](wiki/java/spring_cloud_config.md)
 
-### 上下文
+- [上下文](wiki/java/spring_cloud_config.md)
 
-### 运行队列
+- [运行队列](wiki/java/spring_cloud_config.md)
 
-### 进程调度
+- [进程调度](wiki/java/spring_cloud_config.md)
 
-### 系统调用
+- [系统调用](wiki/java/spring_cloud_config.md)
 
-### cpu管理
+- [cpu管理](wiki/java/spring_cloud_config.md)
 
 ## 内存
 
-### 虚拟内存
+- [虚拟内存](wiki/java/spring_cloud_config.md)
 
-### swap换入换出
+- [swap换入换出](wiki/java/spring_cloud_config.md)
 
-### 内存寻址
+- [内存寻址](wiki/java/spring_cloud_config.md)
 
-### 内存管理
+- [内存管理](wiki/java/spring_cloud_config.md)
 
 ## i/o(磁盘)
 
 ## i/o(网络)
 
-### tpc/ip
+- [tpc/ip](wiki/java/spring_cloud_config.md)
 
-### io模型
+- [io模型](wiki/java/spring_cloud_config.md)
 
 ## 内核/shell
 
