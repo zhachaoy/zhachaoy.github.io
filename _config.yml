@@ -6,7 +6,7 @@ logo_url: https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2
 google_analytics:
 theme:
 wiki_folder: wiki
-use_github_wiki: false
+use_github_wiki: true
 use_prose_io: true
 google_cse_token: n/a
 custom_head: false
