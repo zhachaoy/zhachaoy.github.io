@@ -37,8 +37,8 @@ spring:
       enabled: false    
 ```
 
-3.服务器application*.yml，为所有客户端共享配置文件
-```application.yml
+3.git仓库application*.yml，为所有客户端共享配置文件
+```identity-dev.yml
 server:
   tomcat:
     uri-encoding: UTF-8
@@ -46,11 +46,11 @@ server:
   use-forward-headers: true
 ```
 
-4.服务器[application]-[profile].yml，为指定client配置文件，[label]可以指定分支版本，支持复杂场景配置文件加载（多个，优先级）
+4.git仓库[application]-[profile].yml，为指定client配置文件，[label]可以指定分支版本，支持复杂场景配置文件加载（多个，优先级）
 ```application.yml
-server:
-  tomcat:
-    uri-encoding: UTF-8
-    remote-ip-header: x-forwarded-for
-  use-forward-headers: true
+liquibase:
+  change-log: classpath:liquibase/index.xml
+  user: ${spring.datasource.username}
+  password: ${spring.datasource.password}
+  url: ${spring.datasource.url}
 ```
