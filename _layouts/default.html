@@ -50,7 +50,7 @@
       {% endif %}
         
       </header>
-      <section><!--
+      <section>
       <div id="tools-buttons" style="width: 100%; text-align: right">
         {{page.relative_path}}
         {% if site.use_github_wiki %}
@@ -85,13 +85,13 @@
             {% if site.use_github_wiki %}
               <input type="hidden" name="type" value="Wikis">
             {% else %}
-              <!-- <input type="hidden" name="l" value="Markdown"> ->
+              <!-- <input type="hidden" name="l" value="Markdown"> -->
               <input type="hidden" name="q[]" value="path:/{{ site.wiki_folder }}">
             {% endif %}
             <input type="submit" value="Search">
           </form>
         {% endif %}
-      </div>-->
+      </div>
         
       <div id="toc"></div>
  
