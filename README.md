@@ -90,9 +90,11 @@ provider provision env (org-buss-app)
 
 ## 架构
 
-- [servicemesh](wiki/java/spring_cloud_config.md)
+- [service mesh](wiki/java/spring_cloud_config.md)
 
-- [微服务](wiki/java/spring_cloud_config.md)
+- [istio](wiki/java/spring_cloud_config.md)
+
+- [micro service](wiki/java/spring_cloud_config.md)
 
 ## 编码规范
 
