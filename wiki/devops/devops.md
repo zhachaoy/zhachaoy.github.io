@@ -1,11 +1,11 @@
 # devops
 
-## basic build
+
 - [packer](wiki/java/spring_cloud_config.md)
 
 - [vagrant](wiki/java/spring_cloud_config.md)
 
-## iac
+
 provider provision env (org-buss-app)
 - [terraform](wiki/java/spring_cloud_config.md)
 
@@ -13,14 +13,14 @@ provider provision env (org-buss-app)
 
 - [ros](wiki/java/spring_cloud_config.md)
 
-## container
+
 - [docker](wiki/java/spring_cloud_config.md)
 
 - [mesos](wiki/java/spring_cloud_config.md)
 
 - [kubernetes](wiki/java/spring_cloud_config.md)
 
-## env config
+
 - [cloud-init](wiki/java/spring_cloud_config.md)
 
 - [ansible](wiki/java/spring_cloud_config.md)
@@ -29,4 +29,3 @@ provider provision env (org-buss-app)
 
 - [puppet](wiki/java/spring_cloud_config.md)
 
-## jenkins
