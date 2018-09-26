@@ -52,7 +52,7 @@
       </header>
       <section>
       <div id="tools-buttons" style="width: 100%; text-align: right">
-        <!-- {{page.relative_path}} -->
+        {{page.relative_path}}
         {% if site.use_github_wiki %}
           <span class="tools-element"><a target="_blank" href="{{ site.github.repository_url }}/{{page.folder}}{{url | remove: '.html' | append: ''}}/_edit">Edit</a></span>
           <span class="tools-element"><a target="_blank" href="{{ site.github.repository_url }}/{{page.folder}}{{url | remove: '.html' | append: ''}}/_history">History</a></span>
@@ -94,11 +94,11 @@
       </div>
         
       <div id="toc"></div>
- 
+ <!--
       <div id="content">
         {{ content }}
       </div>
-        
+ -->
       {% if site.comments %}
           {% include comments.html %}
       {% endif %}
