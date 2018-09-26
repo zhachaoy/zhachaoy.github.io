@@ -1,17 +1,5 @@
-# devops
-it's a full featured wiki powered by git, github pages and pull-requests!
+# chaoy-wiki
 
-It means: 
+计算机体系结构非常重要，正如《深入理解计算机系统》这本经典教材所说，头脑中具有体系结构对学习非常有帮助，只有善于思考，逻辑清晰，才能明白技术原理。
 
-* Improvements in the cooperative aspect: forks, pull-requests and roles.
-* You can customize your wiki as you want with style sheets and even changing the layout.
-* No databases! Only static files that can be downloaded in a few seconds.
-* Markdown and html mixed together!
-* History, revision comparison and everything you need from a wiki platform.
-* You can edit your pages with the standard git editor, prose.io (integrated) or any kind of editor you prefer.
-* Non-existent wiki page links are 
-
-You can fork/copy the master branch now and start your wiki in just 1 minute.
-
-**Note:**
-You can even include the github wiki as a submodule and enable the conf, but it's an experimental feature and it implies less advantages and greater disadvantages for now.
+**Note:** 基于DevOps思路构建知识体系非常合适
