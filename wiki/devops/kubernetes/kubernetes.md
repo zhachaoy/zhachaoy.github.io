@@ -13,8 +13,8 @@ ETCDCTL_KEY=/tmp/key.pem
 
 2.使用etcdctl get 命令输出时，可以指定格式，但必须小写
 ```--write-out json
---write-out json json 
---write-out json fields
---write-out json simple
---write-out json protoful
+etcdctl get [key] --write-out json json 
+etcdctl get [key] --write-out json fields
+etcdctl get [key] --write-out json simple
+etcdctl get [key] --write-out json protoful
 ```
