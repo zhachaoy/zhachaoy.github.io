@@ -2,17 +2,17 @@
 
 1. **basic build**
    - [packer](container/kubernetes.md)
-   - [vagrant](wiki/java/spring_cloud_config.md)
+   - [vagrant](container/kubernetes.md)
 2. **iac**
-   - [terraform](wiki/java/spring_cloud_config.md)
-   - [cloudformation](wiki/java/spring_cloud_config.md)
-   - [ros](wiki/java/spring_cloud_config.md)
+   - [terraform](container/kubernetes.md)
+   - [cloudformation](container/kubernetes.md)
+   - [ros](container/kubernetes.md)
 3. **container**
-   - [docker](wiki/java/spring_cloud_config.md)
-   - [mesos](wiki/java/spring_cloud_config.md)
-   - [kubernetes](wiki/java/spring_cloud_config.md)
+   - [docker](container/kubernetes.md)
+   - [mesos](container/kubernetes.md)
+   - [kubernetes](container/kubernetes.md)
 4. **env config**
-   - [cloud-init](wiki/java/spring_cloud_config.md)
-   - [ansible](wiki/java/spring_cloud_config.md)
-   - [chef](wiki/java/spring_cloud_config.md)
-   - [puppet](wiki/java/spring_cloud_config.md)
+   - [cloud-init](container/kubernetes.md)
+   - [ansible](container/kubernetes.md)
+   - [chef](container/kubernetes.md)
+   - [puppet](container/kubernetes.md)
