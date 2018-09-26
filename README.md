@@ -16,14 +16,6 @@ You can fork/copy the master branch now and start your wiki in just 1 minute.
 **Note:**
 You can even include the github wiki as a submodule and enable the conf, but it's an experimental feature and it implies less advantages and greater disadvantages for now.
 
-# 中间件
-
-## db
-
-## mq 
-
-## slb
-
 # python
 
 ## keystone
