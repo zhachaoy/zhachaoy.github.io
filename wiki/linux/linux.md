@@ -6,7 +6,7 @@
    - [运行队列](wiki/java/spring_cloud_config.md)
    - [进程调度](wiki/java/spring_cloud_config.md)
    - [系统调用](wiki/java/spring_cloud_config.md)
-   - [cpu管理](wiki/java/spring_cloud_config.md)
+   - [CPU管理](wiki/java/spring_cloud_config.md)
 2. **内存**
    - [虚拟内存](wiki/java/spring_cloud_config.md)
    - [swap换入换出](wiki/java/spring_cloud_config.md)
