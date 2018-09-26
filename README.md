@@ -1,5 +1,4 @@
 # devops
-
 it's a full featured wiki powered by git, github pages and pull-requests!
 
 It means: 
@@ -18,13 +17,11 @@ You can fork/copy the master branch now and start your wiki in just 1 minute.
 You can even include the github wiki as a submodule and enable the conf, but it's an experimental feature and it implies less advantages and greater disadvantages for now.
 
 ## basic build
-
 - [packer](wiki/java/spring_cloud_config.md)
 
 - [vagrant](wiki/java/spring_cloud_config.md)
 
 ## iac
-
 provider provision env (org-buss-app)
 - [terraform](wiki/java/spring_cloud_config.md)
 
@@ -33,7 +30,6 @@ provider provision env (org-buss-app)
 - [ros](wiki/java/spring_cloud_config.md)
 
 ## container
-
 - [docker](wiki/java/spring_cloud_config.md)
 
 - [mesos](wiki/java/spring_cloud_config.md)
@@ -41,7 +37,6 @@ provider provision env (org-buss-app)
 - [kubernetes](wiki/java/spring_cloud_config.md)
 
 ## env config
-
 - [cloud-init](wiki/java/spring_cloud_config.md)
 
 - [ansible](wiki/java/spring_cloud_config.md)
@@ -55,7 +50,6 @@ provider provision env (org-buss-app)
 # 运维
 
 ## 运维体系
-
 文档, 流程
 - [标准化](wiki/java/spring_cloud_config.md)
 
@@ -69,7 +63,6 @@ provider provision env (org-buss-app)
 - [智能化](wiki/java/spring_cloud_config.md)
 
 ## 运维模式
-
 宠物模式, 随着服务增加管理成本也会增加
 - [pet](wiki/java/spring_cloud_config.md)
 
@@ -77,7 +70,6 @@ provider provision env (org-buss-app)
 - [cattle](wiki/java/spring_cloud_config.md)
 
 ## iaas
-
 - [openstack](wiki/java/spring_cloud_config.md)
 
 - [vmware vsphere](wiki/java/spring_cloud_config.md)
@@ -90,16 +82,14 @@ provider provision env (org-buss-app)
 
 ## 架构
 
-- [service mesh](wiki/java/spring_cloud_config.md)
-
+### service mesh
 - [istio](wiki/java/spring_cloud_config.md)
 
-- [micro service](wiki/java/spring_cloud_config.md)
-
+### micro service
+- [consul](wiki/java/spring_cloud_config.md)
 ## 编码规范
 
 ## 版本控制
-
 - [git](wiki/java/spring_cloud_config.md)
 
 ## 单元测试
@@ -107,7 +97,6 @@ provider provision env (org-buss-app)
 # linux
 
 ## cpu
-
 - [运行级别](wiki/java/spring_cloud_config.md)
 
 - [上下文](wiki/java/spring_cloud_config.md)
@@ -121,7 +110,6 @@ provider provision env (org-buss-app)
 - [cpu管理](wiki/java/spring_cloud_config.md)
 
 ## 内存
-
 - [虚拟内存](wiki/java/spring_cloud_config.md)
 
 - [swap换入换出](wiki/java/spring_cloud_config.md)
@@ -133,7 +121,6 @@ provider provision env (org-buss-app)
 ## i/o(磁盘)
 
 ## i/o(网络)
-
 - [tpc/ip](wiki/java/spring_cloud_config.md)
 
 - [io模型](wiki/java/spring_cloud_config.md)
@@ -171,7 +158,6 @@ provider provision env (org-buss-app)
 # java
 
 ## spring cloud
-
 - [配置文件](wiki/java/spring_cloud_config.md)
 
 - [安全认证](wiki/java/spring_cloud_security.md)
