@@ -16,37 +16,6 @@ You can fork/copy the master branch now and start your wiki in just 1 minute.
 **Note:**
 You can even include the github wiki as a submodule and enable the conf, but it's an experimental feature and it implies less advantages and greater disadvantages for now.
 
-## basic build
-- [packer](wiki/java/spring_cloud_config.md)
-
-- [vagrant](wiki/java/spring_cloud_config.md)
-
-## iac
-provider provision env (org-buss-app)
-- [terraform](wiki/java/spring_cloud_config.md)
-
-- [cloudformation](wiki/java/spring_cloud_config.md)
-
-- [ros](wiki/java/spring_cloud_config.md)
-
-## container
-- [docker](wiki/java/spring_cloud_config.md)
-
-- [mesos](wiki/java/spring_cloud_config.md)
-
-- [kubernetes](wiki/java/spring_cloud_config.md)
-
-## env config
-- [cloud-init](wiki/java/spring_cloud_config.md)
-
-- [ansible](wiki/java/spring_cloud_config.md)
-
-- [chef](wiki/java/spring_cloud_config.md)
-
-- [puppet](wiki/java/spring_cloud_config.md)
-
-## jenkins
-
 # 运维
 
 ## 运维体系
