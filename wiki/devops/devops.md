@@ -17,9 +17,7 @@
 3. **container**
 
    - [docker](wiki/java/spring_cloud_config.md)
-
    - [mesos](wiki/java/spring_cloud_config.md)
-
    - [kubernetes](wiki/java/spring_cloud_config.md)
 
 4. **env config**
