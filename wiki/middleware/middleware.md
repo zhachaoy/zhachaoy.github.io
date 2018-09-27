@@ -14,4 +14,4 @@
    - [Keepalived](container/kubernetes.md)
    - [Consul](container/kubernetes.md)
    - [Confd](container/kubernetes.md)
-   - [etcd](tools/etcd.md)
+   - [Etcd](tools/etcd.md)
