@@ -6,18 +6,18 @@
 
 | 菜单   |      目录      |  内容 |
 |----------|---------------|-------|
-| DevOps |  basic build | [packer](), [vagrant]() |
-| DevOps |    iac   |   [terraform](), [cloudformation](), [ros]() |
-| DevOps | container |    [docker](), [mesos](), [kubernetes]() |
-| DevOps | env config |    [cloud-init](), [ansible](), [chef](), [puppet]() |
-| 开发 |  开发框架 | [service mesh](), [micro service]() |
-| 开发 |  编码规范   |   [google style](), [alibaba style]() |
-| 开发 | 版本控制 |    [git](), [mesos](), [kubernetes]() |
-| 开发 | 单元测试 |    [xunit]() |
+| DevOps |  Basic Build | [Packer](/wiki/devops/devops.html), [Vagrant](/wiki/devops/devops.html) |
+| DevOps |    IAC   |   [Terraform](/wiki/devops/devops.html), [CloudFormation](/wiki/devops/devops.html), [ROS](/wiki/devops/devops.html) |
+| DevOps | Container |    [Docker](/wiki/devops/devops.html), [Mesos](/wiki/devops/devops.html), [Kubernetes](/wiki/devops/devops.html) |
+| DevOps | Env Config |    [Cloud-Init](/wiki/devops/devops.html), [Ansible](/wiki/devops/devops.html), [Chef](/wiki/devops/devops.html), [puppet](/wiki/devops/devops.html) |
+| 开发 |  开发框架 | [Service Mesh](), [Micro Service]() |
+| 开发 |  编码规范   |   [Google Style](), [Alibaba Style]() |
+| 开发 | 版本控制 |    [Git]() |
+| 开发 | 单元测试 |    [xUnit]() |
 | 运维 |  运维体系 | [标准化](), [工具化](), [平台化](), [智能化]() |
-| 运维 |  运维模式   |   [pet](), [cattle]() |
-| 运维 | iaas |    [openstack](), [vmware vsphere](), [公有云]() |
-| 运维 | paas |    [openshift](), [iot](), [公有云]() |
+| 运维 |  运维模式   |   [Pet](), [Cattle]() |
+| 运维 | iaas |    [Openstack](), [Vmware Vsphere](), [公有云]() |
+| 运维 | paas |    [Openshift](), [IOT](), [公有云]() |
 | Linux |  CPU | [运行级别](), [上下文](), [运行队列](), [进程调度](), [系统调用](), [CPU管理]() |
 | Linux |  内存   |   [虚拟内存](), [swap换入换出](), [内存寻址](), [内存管理]() |
 | Linux | I/O(磁盘) |    [缺页中断](), [IOPS](), [IO管理](), [VFS]() |
