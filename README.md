@@ -14,6 +14,15 @@
 | 开发 |  编码规范   |   [Google Style](/wiki/dev/dev.html), [Alibaba Style](/wiki/dev/dev.html) |
 | 开发 | 版本控制 |    [Git](/wiki/dev/dev.html) |
 | 开发 | 单元测试 |    [xUnit](/wiki/dev/dev.html) |
+| Java |  Spring Cloud   |   [配置文件](/wiki/java/java.html), [安全认证](/wiki/java/java.html) |
+| Java | MyBatis |     |
+| Python | Keystone |     |
+| Python |  NetBox   |    |
+| Go | Casbin |     |
+| 中间件 |  数据库 | [MySQL](/wiki/middleware/middleware.html), [PostgreSQL](/wiki/middleware/middleware.html), [MongoDB](/wiki/middleware/middleware.html) |
+| 中间件 |  消息队列   |   [Kafka](/wiki/middleware/middleware.html), [RabbitMQ](/wiki/middleware/middleware.html) |
+| 中间件 | 负载均衡 |    [Nginx](/wiki/middleware/middleware.html), [HAProxy](/wiki/middleware/middleware.html) |
+| 中间件 | 辅助工具 |    [Keepalived](/wiki/middleware/middleware.html), [Consul](/wiki/middleware/middleware.html), [Confd](/wiki/middleware/middleware.html), [Etcd](/wiki/middleware/middleware.html) |
 | 运维 |  运维体系 | [标准化](/wiki/ops/ops.html), [工具化](/wiki/ops/ops.html), [平台化](/wiki/ops/ops.html), [智能化](/wiki/ops/ops.html) |
 | 运维 |  运维模式   |   [Pet](/wiki/ops/ops.html), [Cattle](/wiki/ops/ops.html) |
 | 运维 | IAAS |    [OpenStack](/wiki/ops/ops.html), [Vmware Vsphere](/wiki/ops/ops.html), [公有云](/wiki/ops/ops.html) |
@@ -27,12 +36,3 @@
 | 网络 |  汇聚层   |   [动态路由(OSPF)](/wiki/network/network.html), [静态路由](/wiki/network/network.html), [端口汇聚(EC)](/wiki/network/network.html), [MSTP VRRP](/wiki/network/network.html) |
 | 网络 | 核心层(L4) |    [防火墙](/wiki/network/network.html), [路由器](/wiki/network/network.html), [VPN](), [负载均衡(LB)](/wiki/network/network.html) |
 | 网络 | 互联层 |    [专线(QOS](/wiki/network/network.html), [异地灾备](/wiki/network/network.html), [异地多活](/wiki/network/network.html), [按SET部署](/wiki/network/network.html) |
-| 中间件 |  数据库 | [MySQL](/wiki/middleware/middleware.html), [PostgreSQL](/wiki/middleware/middleware.html), [MongoDB](/wiki/middleware/middleware.html) |
-| 中间件 |  消息队列   |   [Kafka](/wiki/middleware/middleware.html), [RabbitMQ](/wiki/middleware/middleware.html) |
-| 中间件 | 负载均衡 |    [Nginx](/wiki/middleware/middleware.html), [HAProxy](/wiki/middleware/middleware.html) |
-| 中间件 | 辅助工具 |    [Keepalived](/wiki/middleware/middleware.html), [Consul](/wiki/middleware/middleware.html), [Confd](/wiki/middleware/middleware.html), [Etcd](/wiki/middleware/middleware.html) |
-| Java |  Spring Cloud   |   [配置文件](/wiki/java/java.html), [安全认证](/wiki/java/java.html) |
-| Java | MyBatis |     |
-| Python | Keystone |     |
-| Python |  NetBox   |    |
-| Go | Casbin |     |
