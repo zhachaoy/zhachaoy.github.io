@@ -1,4 +1,4 @@
-# kubernetes
+# Kubernetes
 
 1. **Etcd**
 
