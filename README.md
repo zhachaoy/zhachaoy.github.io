@@ -14,11 +14,11 @@
 | 开发 |  编码规范   |   [Google Style](/wiki/dev/dev.html), [Alibaba Style](/wiki/dev/dev.html) |
 | 开发 | 版本控制 |    [Git](/wiki/dev/dev.html) |
 | 开发 | 单元测试 |    [xUnit](/wiki/dev/dev.html) |
-| Java |  Spring Cloud   |   [配置文件](/wiki/java/java.html), [安全认证](/wiki/java/java.html) |
-| Java | MyBatis |     |
-| Python | Keystone |     |
-| Python |  NetBox   |    |
-| Go | Casbin |     |
+| Java |  EE   | [Maven](/wiki/java/java.html), [Spring Cloud](/wiki/java/java.html), [MyBatis](/wiki/java/java.html) |
+| Java | 1.5 | [自动包装](/wiki/java/java.html), [泛型](/wiki/java/java.html), [枚举](/wiki/java/java.html), [静态导入](/wiki/java/java.html), [可变参数](/wiki/java/java.html)  |
+| Java | 1.6 | [集合类](/wiki/java/java.html), [线程类](/wiki/java/java.html), [线程池](/wiki/java/java.html), [异步并发锁](/wiki/java/java.html) |
+| Python | 3.5 |  [Keystone](/wiki/python/python.html), [NetBox](/wiki/python/python.html)   |
+| Go | 1.0 | [Casbin](/wiki/go/go.html)  |
 | 中间件 |  数据库 | [MySQL](/wiki/middleware/middleware.html), [PostgreSQL](/wiki/middleware/middleware.html), [MongoDB](/wiki/middleware/middleware.html) |
 | 中间件 |  消息队列   |   [Kafka](/wiki/middleware/middleware.html), [RabbitMQ](/wiki/middleware/middleware.html) |
 | 中间件 | 负载均衡 |    [Nginx](/wiki/middleware/middleware.html), [HAProxy](/wiki/middleware/middleware.html) |
