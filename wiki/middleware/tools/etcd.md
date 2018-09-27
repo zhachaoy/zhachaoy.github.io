@@ -11,8 +11,8 @@ export ETCDCTL_KEY=/tmp/key.pem
 
 2. 使用etcdctl get 命令输出时，可以指定格式，但必须小写
 ```bash
-etcdctl get [key] --write-out json json 
-etcdctl get [key] --write-out json fields
-etcdctl get [key] --write-out json simple
-etcdctl get [key] --write-out json protoful
+etcdctl get [key] --w json json 
+etcdctl get [key] --w json fields
+etcdctl get [key] --w json simple
+etcdctl get [key] --w json protoful
    ```
