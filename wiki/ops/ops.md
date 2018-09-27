@@ -11,14 +11,14 @@
    - [智能化](wiki/java/spring_cloud_config.md)
 2. **运维模式**
    <!-- 宠物模式, 随着服务增加管理成本也会增加 -->
-   - [pet](container/kubernetes.md)
+   - [Pet](container/kubernetes.md)
    <!-- 牲口模式, 很好的处理服务增加成本 -->
-   - [cattle](container/kubernetes.md)
-3. **iaas**
-   - [openstack](container/kubernetes.md)
-   - [vmware vsphere](container/kubernetes.md)
+   - [Cattle](container/kubernetes.md)
+3. **IAAS**
+   - [OpenStack](container/kubernetes.md)
+   - [Vmware Vsphere](container/kubernetes.md)
    - [公有云](container/kubernetes.md)
-4. **paas**
-   - [openshift](container/kubernetes.md)
-   - [iot](container/kubernetes.md)
+4. **PAAS**
+   - [OpenShift](container/kubernetes.md)
+   - [IOT](container/kubernetes.md)
    - [公有云](container/kubernetes.md)
