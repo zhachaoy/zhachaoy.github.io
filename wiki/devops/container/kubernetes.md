@@ -104,9 +104,9 @@
 
    1. api server，安全性第一道关卡是与外部的https通信，采用自签名证书方式，内容保存在$USER/.kube/config中
    
-   2. api server，安全性第二道关卡是认证Authentication，默认必须开启service account方式（启动api server时指定参数进行配置），同时还支持其他认证方式，任意认证通过即通过
+   2. api server，安全性第二道关卡是认证Authentication，默认client证书和service account方式（启动api server时指定参数进行配置），同时还支持其他认证方式，任意认证通过即通过
    
-   3. api server，安全性第三道关卡是授权Authorization，默认RBAC方式（启动api server时指定参数进行配置），同时还支持其他授权方式
+   3. api server，安全性第三道关卡是授权Authorization，默认Node和RBAC方式（启动api server时指定参数进行配置），同时还支持其他授权方式
    
    4. api server，安全性第四道关卡是准入控制Admission Control，默认开启service account，limit，quota等，可以以插件形式进行配置，对配额，网络，计算资源等进行检查
    
