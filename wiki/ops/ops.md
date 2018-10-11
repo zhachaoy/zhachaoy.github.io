@@ -19,6 +19,6 @@
    - [Vmware Vsphere](container/kubernetes.md)
    - [公有云](container/kubernetes.md)
 4. **PAAS**
-   - [OpenShift](container/kubernetes.md)
+   - [OpenShift](paas/openshift.md)
    - [IOT](container/kubernetes.md)
    - [公有云](container/kubernetes.md)
