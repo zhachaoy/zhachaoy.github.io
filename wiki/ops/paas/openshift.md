@@ -57,7 +57,7 @@
       # yum install -y pyOpenSSL python-cryptography python-lxml
       ```
    
-   4. 执行ansible playbook 进行安装
+   4. 执行ansible playbook进行安装
       ```bash 
       # cd~
       # git clone https://github.com/openshift/openshift-ansible
