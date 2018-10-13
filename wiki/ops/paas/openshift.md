@@ -31,6 +31,7 @@
 2. **Openshift-ansible**
    1. 安装基础包
       ```bash 
+      # ssh-keygen
       # sudo yum install wget git net-tools bind-utils yum-utils iptables-services bridge-utils bash-completion kexec-tools sos psacct
       # sudo yum update
       # reboot
