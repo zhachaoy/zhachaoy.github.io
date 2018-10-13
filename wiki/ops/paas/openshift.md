@@ -39,7 +39,7 @@
    2. 安装docker
       ```bash 
       # sudo yum install docker-1.13.1
-      # systemctl enable docker
+      # sudo systemctl enable docker
       ```
       
       ```bash 
@@ -54,8 +54,8 @@
       
    3. 安装ansible(版本必须2.6.5，官方项目明确说明Ansible >= 2.6.5, Ansible 2.7 is not yet supported and known to fail)
       ```bash 
-      # yum install -y https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.6.5-1.el7.ans.noarch.rpm
-      # yum install -y pyOpenSSL python-cryptography python-lxml
+      # sudo yum install -y https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.6.5-1.el7.ans.noarch.rpm
+      # sudo yum install -y pyOpenSSL python-cryptography python-lxml
       # sudo yum -y install java-1.8.0-openjdk-headless
       ```
    
