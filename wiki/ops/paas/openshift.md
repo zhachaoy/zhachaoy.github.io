@@ -29,11 +29,12 @@
       ```
       
 2. **Openshift-ansible**
-   1. 安装基础包
+   1. 安装基础包(必须重启)
       ```bash 
       # ssh-keygen
       # sudo yum install -y wget git net-tools bind-utils yum-utils iptables-services bridge-utils bash-completion kexec-tools sos psacct
       # sudo yum update -y
+      # reboot
       ```
       
    2. 安装docker
@@ -57,7 +58,6 @@
       # sudo yum install -y https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.6.5-1.el7.ans.noarch.rpm
       # sudo yum install -y pyOpenSSL python-cryptography python-lxml
       # sudo yum install -y java-1.8.0-openjdk-headless
-      # reboot
       ```
    
    4. 执行ansible playbook进行安装
