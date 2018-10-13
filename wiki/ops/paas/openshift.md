@@ -33,6 +33,7 @@
       ```bash 
       # ssh-keygen
       # sudo yum install wget git net-tools bind-utils yum-utils iptables-services bridge-utils bash-completion kexec-tools sos psacct
+      # sudo yum install java-1.8.0-openjdk-headless
       # sudo yum update
       # reboot
       ```
