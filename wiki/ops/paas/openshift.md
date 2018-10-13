@@ -35,6 +35,7 @@
       # sudo yum install -y wget git net-tools bind-utils yum-utils iptables-services bridge-utils bash-completion kexec-tools sos psacct
       # sudo yum update -y
       ```
+      
    2. 安装docker
       ```bash 
       # sudo yum install -y docker-1.13.1
