@@ -1,4 +1,4 @@
-# OKD
+# Openshift
 
 1. **Minishift**
 
@@ -63,7 +63,7 @@
       # cd~
       # git clone https://github.com/openshift/openshift-ansible
       # cd openshift-ansible
-      # git checkout release-3.11
+      # git checkout release-3.10
       
       # sudo ansible-playbook -i inventory/hosts.localhost playbooks/prerequisites.yml
       # sudo ansible-playbook -i inventory/hosts.localhost playbooks/deploy_cluster.yml
