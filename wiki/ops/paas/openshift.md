@@ -27,3 +27,43 @@
       ```bash
       # minishift start
       ```
+      
+2. **Openshift-ansible**
+   1. 安装基础包
+      ```bash 
+      # sudo yum install wget git net-tools bind-utils yum-utils iptables-services bridge-utils bash-completion kexec-tools sos psacct
+      # sudo yum update
+      # reboot
+      ```
+   2. 安装docker
+      ```bash 
+      # sudo yum install docker-1.13.1
+      # systemctl enable docker
+      ```
+      
+      ```bash 
+      sudo tee /etc/docker/daemon.json <<-'EOF'
+      {
+        "registry-mirrors": ["https://31f62odg.mirror.aliyuncs.com"]
+      }
+      EOF
+      sudo systemctl daemon-reload
+      sudo systemctl restart docker
+      ```
+      
+   3. 安装ansible(版本必须2.6.5，官方项目明确说明Ansible >= 2.6.5, Ansible 2.7 is not yet supported and known to fail)
+      ```bash 
+      # yum install -y https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.6.5-1.el7.ans.noarch.rpm
+      # yum install -y pyOpenSSL python-cryptography python-lxml
+      ```
+   
+   4. 执行ansible playbook 进行安装
+      ```bash 
+      # cd~
+      # git clone https://github.com/openshift/openshift-ansible
+      # cd openshift-ansible
+      # git checkout release-3.11
+      
+      # sudo ansible-playbook -i inventory/hosts.localhost playbooks/prerequisites.yml
+      # sudo ansible-playbook -i inventory/hosts.localhost playbooks/deploy_cluster.yml
+      ```
