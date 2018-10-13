@@ -32,13 +32,13 @@
    1. 安装基础包
       ```bash 
       # ssh-keygen
-      # sudo yum install wget git net-tools bind-utils yum-utils iptables-services bridge-utils bash-completion kexec-tools sos psacct
-      # sudo yum update
+      # sudo yum install -y wget git net-tools bind-utils yum-utils iptables-services bridge-utils bash-completion kexec-tools sos psacct
+      # sudo yum update -y
       # reboot
       ```
    2. 安装docker
       ```bash 
-      # sudo yum install docker-1.13.1
+      # sudo yum install -y docker-1.13.1
       # sudo systemctl enable docker
       ```
       
@@ -56,7 +56,7 @@
       ```bash 
       # sudo yum install -y https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.6.5-1.el7.ans.noarch.rpm
       # sudo yum install -y pyOpenSSL python-cryptography python-lxml
-      # sudo yum -y install java-1.8.0-openjdk-headless
+      # sudo yum install -y java-1.8.0-openjdk-headless
       ```
    
    4. 执行ansible playbook进行安装
