@@ -1,7 +1,6 @@
 # Openshift
 
-1. **Minishift**
-
+1. **Minishift单机安装**
    1. 安装KVM驱动
       ```bash 
       curl -L https://github.com/dhiltgen/docker-machine-kvm/releases/download/v0.7.0/docker-machine-driver-kvm -o /usr/local/bin/docker-machine-driver-kvm
@@ -28,7 +27,7 @@
       minishift start
       ```
       
-2. **Openshift-ansible**
+2. **Openshift-ansible集群安装**
    1. 安装基础包(必须重启)
       ```bash 
       ssh-keygen
@@ -56,11 +55,36 @@
    3. 安装ansible(版本必须2.6.5，官方项目明确说明Ansible >= 2.6.5, Ansible 2.7 is not yet supported and known to fail)
       ```bash 
       sudo yum install -y https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.6.5-1.el7.ans.noarch.rpm
-      sudo yum install -y pyOpenSSL python-cryptography python-lxml
-      sudo yum install -y java-1.8.0-openjdk-headless
+      sudo yum install -y pyOpenSSL 
+      # sudo yum install -y python-cryptography python-lxml
+      # sudo yum install -y java-1.8.0-openjdk-headless
+      ```
+      
+   4. 在ansible节点配置ssh免密登录, 配置本地hosts
+      ```bash 
+      sudo ssh-keygen
+      ```
+      
+      ```bash 
+      for host in openshift-lb openshift-master001 openshift-master002 openshift-master003 openshift-node001 openshift-node002 openshift-infra001 openshift-infra002
+        do ssh-copy-id -i ~/.ssh/id_rsa.pub $host; done
+      ```
+      
+      ```bash 
+      sudo vi /etc/hosts
+      172.16.135.95    openshift-lb
+      172.16.135.91    openshift-master001
+      172.16.135.93    openshift-master002
+      172.16.135.94    openshift-master003
+      172.16.135.86    openshift-node001
+      172.16.135.87    openshift-node002
+      172.16.135.88    openshift-infra001
+      172.16.135.92    openshift-infra002
+      172.16.135.95    openshift-internal.iotbull.com
+      172.16.135.95    openshift-cluster.iotbull.com
       ```
    
-   4. 执行ansible playbook进行安装
+   5. 执行ansible playbook进行安装(inventory/hosts.*文件请按照需求配置集群节点, 可参考官方文档中的样例)
       ```bash 
       cd~
       git clone https://github.com/openshift/openshift-ansible
@@ -69,4 +93,37 @@
       
       sudo ansible-playbook -i inventory/hosts.localhost playbooks/prerequisites.yml
       sudo ansible-playbook -i inventory/hosts.localhost playbooks/deploy_cluster.yml
+      ```
+      
+3. **Openshift-cluster基础配置**
+   1. openshift-master节点image registry的配置
+      ```bash 
+      sudo vi /etc/origin/master/master-config.yaml
+      
+      imagePolicyConfig:
+        internalRegistryHostname: docker-registry.default.svc:5000
+        allowedRegistriesForImport:
+        - domainName: registry.cn-shanghai.aliyuncs.com
+        - domainName: docker.io
+        - domainName: dockerhub.iotbull.com:5000
+            insecure: true
+        - domainName: 172.16.135.152:5000
+            insecure: true
+      ```
+      
+   2. opneshift-master节点dns的配置
+      ```bash 
+      sudo vi /etc/dnsmasq.d/origin-upstream-dns.conf
+      ```
+
+   3. docker的配置
+      ```bash 
+      sudo vi /etc/docker/daemon.json
+      ```
+      
+   4. gitlab的配置
+      ```bash 
+      Generate the PEM or DER encoded public certificate from your private key certificate.
+      Copy the public certificate file only into the /etc/gitlab/trusted-certs directory.
+      Run gitlab-ctl reconfigure.
       ```
