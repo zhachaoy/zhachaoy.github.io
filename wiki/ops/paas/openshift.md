@@ -80,8 +80,8 @@
       172.16.135.87    openshift-node002
       172.16.135.88    openshift-infra001
       172.16.135.92    openshift-infra002
-      172.16.135.95    openshift-internal.iotbull.com
-      172.16.135.95    openshift-cluster.iotbull.com
+      172.16.135.95    openshift-internal.iot.com
+      172.16.135.95    openshift-cluster.iot.com
       ```
    
    5. 执行ansible playbook进行安装(inventory/hosts.*文件请按照需求配置集群节点, 可参考官方文档中的样例)
@@ -105,7 +105,7 @@
         allowedRegistriesForImport:
         - domainName: registry.cn-shanghai.aliyuncs.com
         - domainName: docker.io
-        - domainName: dockerhub.iotbull.com:5000
+        - domainName: dockerhub.iot.com:5000
             insecure: true
         - domainName: 172.16.135.152:5000
             insecure: true

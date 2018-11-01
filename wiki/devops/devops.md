@@ -11,6 +11,7 @@
    - [Docker](container/kubernetes.md)
    - [Mesos](container/kubernetes.md)
    - [Kubernetes](container/kubernetes.md)
+   - [OpenShift](container/openshift.md)
 4. **Env Config**
    - [Cloud-Init](container/kubernetes.md)
    - [Ansible](container/kubernetes.md)
