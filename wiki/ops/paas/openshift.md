@@ -42,6 +42,7 @@
       sudo systemctl enable docker
       ```
       
+      配置docker国内代理
       ```bash 
       sudo tee /etc/docker/daemon.json <<-'EOF'
       {
