@@ -67,11 +67,13 @@
       sudo ssh-keygen
       ```
       
+      给所有节点推送公钥
       ```bash 
       for host in openshift-lb openshift-master001 openshift-master002 openshift-master003 openshift-node001 openshift-node002 openshift-infra001 openshift-infra002
         do ssh-copy-id -i ~/.ssh/id_rsa.pub $host; done
       ```
       
+      修改所有节点本地路由记录
       ```bash 
       sudo vi /etc/hosts
       172.16.135.95    openshift-lb
