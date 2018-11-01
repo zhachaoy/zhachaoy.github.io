@@ -52,12 +52,14 @@
       sudo systemctl restart docker
       ```
       
-   3. 安装ansible(版本必须2.6.5，官方项目明确说明Ansible >= 2.6.5, Ansible 2.7 is not yet supported and known to fail)
+   3. 安装ansible(版本必须2.6.5, openshift-ansible项目明确说明Ansible >= 2.6.5, Ansible 2.7 is not yet supported and known to fail)
       ```bash 
       sudo yum install -y https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/ansible-2.6.5-1.el7.ans.noarch.rpm
-      sudo yum install -y pyOpenSSL 
-      # sudo yum install -y python-cryptography python-lxml
-      # sudo yum install -y java-1.8.0-openjdk-headless
+      sudo yum install -y pyOpenSSL
+      
+      以下安装openshift并没有要求, openshift-ansible有这个要求, 还不清楚是否必须 
+      sudo yum install -y python-cryptography python-lxml
+      sudo yum install -y java-1.8.0-openjdk-headless
       ```
       
    4. 在ansible节点配置ssh免密登录, 配置本地hosts
@@ -91,8 +93,9 @@
       cd openshift-ansible
       git checkout release-3.10
       
-      sudo ansible-playbook -i inventory/hosts.localhost playbooks/prerequisites.yml
-      sudo ansible-playbook -i inventory/hosts.localhost playbooks/deploy_cluster.yml
+      以下执行前先参考官方example列出的不同集群方式, 将文件放在inventory目录下, 并在执行时指定, 默认该目录下有单机版文件hosts.localhost
+      sudo ansible-playbook -i inventory/example.localhost playbooks/prerequisites.yml
+      sudo ansible-playbook -i inventory/example.localhost playbooks/deploy_cluster.yml
       ```
       
 3. **Openshift-cluster基础配置**
