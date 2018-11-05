@@ -49,6 +49,7 @@
         "registry-mirrors": ["https://31f62odg.mirror.aliyuncs.com"]
       }
       EOF
+      
       sudo systemctl daemon-reload
       sudo systemctl restart docker
       ```
