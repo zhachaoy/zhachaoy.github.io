@@ -61,7 +61,9 @@
       
       以下安装openshift并没有要求, openshift-ansible有这个要求, 还不清楚是否必须 
       sudo yum install -y python-cryptography python-lxml
-      sudo yum install -y java-1.8.0-openjdk-headless
+      
+      Additional requirements:
+      sudo yum install -y patch httpd-tools java-1.8.0-openjdk-headless
       ```
       
    4. 在ansible节点配置ssh免密登录, 配置本地hosts
