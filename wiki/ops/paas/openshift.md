@@ -214,7 +214,7 @@
       oc label pv iot-dev-paascloud disktype=iot-dev-paascloud
       ```
       
-7. **二次构建**
+7. **链接构建**
    1. 编译型语言第一次构建可执行程序(比如jar), 这个构建过程可能有很多依赖要下载, 很多环境配置要满足, 所以该镜像不建议直接运行
       ```bash 
       build镜像一般进行环境初始化, 依赖下载等, 比较占用空间
