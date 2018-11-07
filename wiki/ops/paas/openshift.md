@@ -1,4 +1,4 @@
-# Openshift
+# OpenShift
 
 1. **Minishift单机安装**
    1. 安装KVM驱动
@@ -27,7 +27,7 @@
       minishift start
       ```
       
-2. **Openshift-ansible集群安装**
+2. **OpenShift-Ansible集群安装**
    1. 安装基础包(必须重启)
       ```bash 
       ssh-keygen
