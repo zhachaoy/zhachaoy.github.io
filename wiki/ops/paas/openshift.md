@@ -14,7 +14,7 @@
    
    2. 配置github token(Minishift会去github上验证，并调用其api，不配置token将没有api权限)
       ```bash
-      export MINISHIFT_GITHUB_API_TOKEN = <token_ID>
+      export MINISHIFT_GITHUB_API_TOKEN=<token_ID>
       ```
       
    3. 下载Minishift安装包，解压并配置到环境变量中(必须)
@@ -105,7 +105,6 @@
       ```
 
 3. **生产级别硬件需求**
-
    1. 云平台集群配置(<1000 pod)
       ```html
       | 节点 | CPU(cores) | 内存(GB) | 存储(GB) | 数量 | 备注 |
