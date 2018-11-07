@@ -103,8 +103,20 @@
       sudo ansible-playbook -i inventory/example.localhost playbooks/prerequisites.yml
       sudo ansible-playbook -i inventory/example.localhost playbooks/deploy_cluster.yml
       ```
-      
-3. **Openshift-cluster基础配置**
+
+3. **生产级别硬件需求**
+
+   1. 云平台集群配置(<1000 pod)
+   
+        | 节点 | CPU(cores) | 内存(GB) | 存储(GB) | 数量 | 备注 |
+        |-------| CPU(cores) | 内存(GB) | 存储(GB) | 数量 | 备注 |
+        | master | 4 | 16 | 160 | 3 | 控制器 |
+        | master | 4 | 16 | 160 | 3 | 控制器 |
+        | master | 4 | 16 | 160 | 3 | 控制器 |
+        | master | 4 | 16 | 160 | 3 | 控制器 |
+        | master | 4 | 16 | 160 | 3 | 控制器 |
+         
+4. **基础配置**
    1. openshift-master节点image registry的配置
       ```bash 
       sudo vi /etc/origin/master/master-config.yaml
@@ -120,9 +132,10 @@
             insecure: true
       ```
       
-   2. opneshift-master节点dns的配置
+   2. 所有节点dns的配置
       ```bash 
-      sudo vi /etc/dnsmasq.d/origin-upstream-dns.conf
+      默认所有节点pod都将使用所在的host作为dns地址, 并不会讲host的dns拷贝到容器内, 所以所有节点需要安装dnsmasq, 并默认启动, 外部dns server配置到dnsmasq的配置文件中即可
+      sudo vi /etc/dnsmasq.conf
       ```
 
    3. docker的配置
@@ -135,4 +148,80 @@
       Generate the PEM or DER encoded public certificate from your private key certificate.
       Copy the public certificate file only into the /etc/gitlab/trusted-certs directory.
       Run gitlab-ctl reconfigure.
+      ```
+      
+   5. 反序列化pod缓存, 如果pod<1000, 建议设置为1000, 默认为50000, 越大越占用master内存
+      ```bash 
+      sudo vi /etc/origin/master/master-config.yaml
+      
+      kubernetesMasterConfig:
+        apiServerArguments:
+          deserialization-cache-size:
+          - "1000"
+      ```
+
+5. **租户(namespace)**
+   1. 权限
+      ```bash 
+      build阶段需要root权限执行时,需要为租户开放权限
+      oc edit scc privileged
+      在users里增加指定租户的builder用户
+      
+      depoly阶段需要root权限执行时,需要为租户开放权限
+      oc edit scc anyuid
+      在users里增加指定租户的default用户
+      ```
+   
+   2. 集群管理员(cluster role)
+      ```bash
+      登录集群管理员
+      oc login -u system:admin -n default --config=/etc/origin/master/admin.kubeconfig
+      
+      登录后必须手动切换用户
+      oc login -u system:admin -n xxx
+      ```
+      
+6. **持久化存储(pv)**
+   1. nfs服务器
+      ```bash 
+      安装后主要关闭selinux
+      安装后注意防火墙iptables, firewalld
+      安装后注意存储目录权限
+      ```
+      
+   2. 创建pv
+      ```bash 
+      切换到system:admin用户, pv为全局共享
+        {
+          "apiVersion": "v1",
+          "kind": "PersistentVolume",
+          "metadata": {
+            "name": "iot-dev-paascloud"
+          },
+          "spec": {
+            "capacity": {
+              "storage": "10Gi"
+            },
+            "accessModes": [ "ReadWriteMany" ],
+            "nfs": {
+              "path": "/export/pv/dev-paascloud",
+              "server": "172.16.135.104"
+            },
+            "persistentVolumeReclaimPolicy": "Retain"
+          }
+        }   
+       
+      注意设置label用于pvc选择
+      oc label pv iot-dev-paascloud disktype=iot-dev-paascloud
+      ```
+      
+7. **二次构建**
+   1. 编译性语言第一次构建可执行程序(比如jar)
+      ```bash 
+      build镜像一般进行环境初始化, 依赖下载等, 比较占用空间
+      ```
+      
+   2. 第二次构建从第一次构建的镜像中读取二进制程序(比如jar)用于运行时
+      ```bash 
+      runtime镜像一般执行启动命令
       ```

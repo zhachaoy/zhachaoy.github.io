@@ -17,7 +17,8 @@
 3. **IAAS**
    - [OpenStack](container/kubernetes.md)
    - [Vmware Vsphere](container/kubernetes.md)
-   - [公有云](container/kubernetes.md)
+   - [NFS](container/kubernetes.md)
+   - [SAN/NAS](container/kubernetes.md)
 4. **PAAS**
    - [OpenShift](paas/openshift.md)
    - [IOT](container/kubernetes.md)
