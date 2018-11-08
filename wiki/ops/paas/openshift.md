@@ -144,7 +144,7 @@
       默认所有节点pod都将使用所在的host作为dns地址, 并不会讲host的dns拷贝到容器内, 所以所有节点需要安装dnsmasq, 并默认启动, 外部dns server配置到dnsmasq的配置文件中即可
       sudo vi /etc/dnsmasq.conf
       
-      注意server的地址最多三个, 外部dns最好仅配置一个
+      注意server的地址最多三个, 企业业务dns最好仅配置一个
       server=x.x.x.x
       
       systemctl restart dnsmasq
