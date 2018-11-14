@@ -18,3 +18,5 @@ gems:
   - jemoji
   - jekyll-redirect-from
   - jekyll-feed
+
+theme: jekyll-theme-cayman
