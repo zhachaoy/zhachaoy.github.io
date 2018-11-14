@@ -1,20 +1,3 @@
+theme: jekyll-theme-cayman
 title: chaoyi-wiki
 description: zhachaoy@163.com
-show_downloads: false
-git_branch: master
-logo_url: https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png
-google_analytics:
-theme:
-wiki_folder:
-use_github_wiki: true
-use_prose_io: false
-google_cse_token: n/a
-custom_head: false
-custom_sidebar: true
-custom_footer: false
-gems:
-  - jekyll-sitemap
-  - jekyll-mentions
-  - jemoji
-  - jekyll-redirect-from
-  - jekyll-feed
