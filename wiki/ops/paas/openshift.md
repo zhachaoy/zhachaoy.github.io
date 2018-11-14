@@ -163,6 +163,14 @@
           deserialization-cache-size:
           - "1000"
       ```
+      
+   6. route域名后缀配置
+      ```bash 
+      sudo vi /etc/origin/master/master-config.yaml
+      
+      routingConfig:
+        subdomain: openshift-cluster.com
+      ```   
 
 5. **租户(namespace)**
    1. 权限
