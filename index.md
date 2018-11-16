@@ -1,9 +1,10 @@
 | 菜单 | 目录 | 内容 |
 |-----|------|-----|
-| DevOps | Basic Build |  [Packer](wiki/devops/devops.html), [Vagrant](wiki/devops/devops.html) |
-| DevOps | IAC |  [Terraform](wiki/devops/devops.html), [CloudFormation](wiki/devops/devops.html), [ROS](wiki/devops/devops.html) |
-| DevOps | Container |  [Docker](wiki/devops/devops.html), [Mesos](wiki/devops/devops.html), [Kubernetes](wiki/devops/devops.html) |
-| DevOps | Env Config |  [Cloud-Init](wiki/devops/devops.html), [Ansible](wiki/devops/devops.html), [Chef](wiki/devops/devops.html), [puppet](wiki/devops/devops.html) |
+| DevOps | Guides |  [Google SRE](wiki/devops/devops.html) |
+| DevOps | Basic Build |  [Packer], [Vagrant] |
+| DevOps | IAC |  [Terraform](wiki/devops/devops.html), [CloudFormation], [ROS] |
+| DevOps | Container |  [Docker](wiki/devops/devops.html), [Mesos], [Kubernetes](wiki/devops/devops.html) |
+| DevOps | Env Config |  [Cloud-Init], [Ansible](wiki/devops/devops.html), [Chef], [puppet] |
 | 开发 | 开发框架 |  [Service Mesh](wiki/dev/dev.html), [Micro Service](wiki/dev/dev.html) |
 | 开发 | 编码规范 |  [Google Style](wiki/dev/dev.html), [Alibaba Style](wiki/dev/dev.html) |
 | 开发 | 版本控制 |  [Git](wiki/dev/dev.html) |
