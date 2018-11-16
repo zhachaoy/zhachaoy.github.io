@@ -4,17 +4,11 @@
    - [Google SRE](guides/google_sre.md)
 2. **Basic build**
    - [Packer]
-   - [Vagrant]
 3. **IAC**
-   - [Terraform](container/kubernetes.md)
-   - [CloudFormation]
-   - [ROS]
+   - [Terraform](container/openshift.md)
 4. **Container**
-   - [Docker](container/kubernetes.md)
-   - [Mesos]
+   - [Docker](container/openshift.md)
+   - [OpenShift](container/openshift.md)
    - [Kubernetes](container/kubernetes.md)
 5. **Env Config**
-   - [Cloud-Init]
-   - [Ansible](container/kubernetes.md)
-   - [Chef]
-   - [Puppet]
+   - [Ansible](container/openshift.md)

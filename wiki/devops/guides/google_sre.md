@@ -1,20 +1,5 @@
 # Google SRE
 
 1. **工程化**
-   - [Google SRE](guides/google_sre.md)
-2. **Basic build**
-   - [Packer]
-   - [Vagrant]
-3. **IAC**
-   - [Terraform](container/kubernetes.md)
-   - [CloudFormation]
-   - [ROS]
-4. **Container**
-   - [Docker](container/kubernetes.md)
-   - [Mesos]
-   - [Kubernetes](container/kubernetes.md)
-5. **Env Config**
-   - [Cloud-Init]
-   - [Ansible](container/kubernetes.md)
-   - [Chef]
-   - [Puppet]
+   > 对重复性, 手工性的操作有天然的排斥感
+   > 有足够的技术能力快速开发出软件系统以替代手工操作 
