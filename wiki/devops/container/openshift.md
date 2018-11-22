@@ -112,7 +112,7 @@
       | master | 4 | 16 | 160 | 3 | 控制器 |
       | etcd | 2 | 8 | 40 | 3 | 配置管理 |
       | infra | 2 | 8 | 1024 | 2 | 持久化存储GlusterFS, NFS |
-      | ndoe | 16 | 64 | 145 | 8 | 预留10%, cpu1:10共享, 内存1:2共享 |
+      | node | 16 | 64 | 145 | 8 | 预留10%, cpu1:10共享, 内存1:2共享 |
       | lb | 2 | 8 | 40 | 2 | 负载均衡vip, 带宽50M |
 
 4. **基础配置**
@@ -202,13 +202,14 @@
       ```
       
    2. 创建pv
+      > nfs挂载, 核心业务不建议使用nfs
       ```bash 
       切换到system:admin用户, pv为全局共享
         {
           "apiVersion": "v1",
           "kind": "PersistentVolume",
           "metadata": {
-            "name": "iot-dev-paascloud"
+            "name": "dev-paascloud"
           },
           "spec": {
             "capacity": {
@@ -224,8 +225,10 @@
         }   
        
       注意设置label用于pvc选择
-      oc label pv iot-dev-paascloud disktype=iot-dev-paascloud
+      oc label pv dev-paascloud disktype=dev-paascloud
       ```
+
+      > glusterfs挂载, 使用storage class创建pvc, 可以保证备份
       
 7. **链接构建**
    1. 编译型语言第一次构建可执行程序(比如jar), 这个构建过程可能有很多依赖要下载, 很多环境配置要满足, 所以该镜像不建议直接运行
