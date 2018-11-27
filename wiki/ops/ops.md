@@ -14,12 +14,11 @@
    - [Pet](container/kubernetes.md)
    <!-- 牲口模式, 很好的处理服务增加成本 -->
    - [Cattle](container/kubernetes.md)
-3. **IaaS**
+3. **运维工具**
    - [OpenStack](container/kubernetes.md)
    - [Vmware Vsphere](container/kubernetes.md)
    - [NFS](container/kubernetes.md)
    - [SAN/NAS](container/kubernetes.md)
-4. **PaaS**
-   - [OpenShift](paas/openshift.md)
    - [IOT](container/kubernetes.md)
    - [公有云](container/kubernetes.md)
+  

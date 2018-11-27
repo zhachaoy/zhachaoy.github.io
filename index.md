@@ -20,8 +20,7 @@
 | 中间件 | 辅助工具 |  [Keepalived](wiki/middleware/middleware.html), [Consul](wiki/middleware/middleware.html), [Confd](wiki/middleware/middleware.html), [Etcd](wiki/middleware/middleware.html) |
 | 运维 | 运维体系 |  [标准化](wiki/ops/ops.html), [工具化](wiki/ops/ops.html), [平台化](wiki/ops/ops.html), [智能化](wiki/ops/ops.html) |
 | 运维 | 运维模式 |  [Pet](wiki/ops/ops.html), [Cattle](wiki/ops/ops.html) |
-| 运维 | IaaS |  [OpenStack](wiki/ops/ops.html), [Vmware Vsphere](wiki/ops/ops.html), [NFS](wiki/ops/ops.html), [SAN/NAS](wiki/ops/ops.html) |
-| 运维 | PaaS |  [OpenShift](wiki/ops/ops.html), [IOT](wiki/ops/ops.html), [公有云](wiki/ops/ops.html) |
+| 运维 | 运维工具 |  [OpenStack](wiki/ops/ops.html), [Vmware Vsphere](wiki/ops/ops.html), [NFS](wiki/ops/ops.html), [SAN/NAS](wiki/ops/ops.html), [IOT](wiki/ops/ops.html), [公有云](wiki/ops/ops.html) |
 | Linux | CPU |  [运行级别](wiki/linux/linux.html), [上下文](wiki/linux/linux.html), [运行队列](wiki/linux/linux.html), [进程调度](wiki/linux/linux.html), [系统调用](wiki/linux/linux.html), [CPU管理](wiki/linux/linux.html) |
 | Linux | 内存 |  [虚拟内存](), [Swap换入换出](wiki/linux/linux.html), [内存寻址](), [内存管理]() |
 | Linux | I/O(磁盘) |  [缺页中断](wiki/linux/linux.html), [IOPS](), [IO管理](wiki/linux/linux.html), [VFS](wiki/linux/linux.html) |

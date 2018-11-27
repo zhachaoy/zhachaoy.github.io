@@ -170,7 +170,12 @@
       
       routingConfig:
         subdomain: openshift-cluster.com
-      ```   
+      ```
+   
+   7. 配置集群
+      > master集群环境下不建议直接修改配置文件(除非手动部署组件), 应该使用ansible对集群进行更新
+
+      > 已知在所有master节点修改/etc/origin/master/master-config.yml的imagePolicyConfig.allowedRegistriesForImport会出现无法启动问题, 错误日志内容为配置文件格式不正确
 
 5. **租户(namespace)**
    1. 权限
