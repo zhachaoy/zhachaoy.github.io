@@ -1,6 +1,6 @@
 | 领域 | 菜单 | 内容 |
 |-----|------|-----|
-| DevOps | Guides |  [Google SRE](wiki/devops/devops.html) |
+| DevOps | Guides |  [Google SRE](wiki/devops/guides/google_sre.md) |
 | DevOps | Basic Build |  [Packer] |
 | DevOps | IAC |  [Terraform](wiki/devops/devops.html) |
 | DevOps | Container |  [Docker](wiki/devops/devops.html), [OpenShift](wiki/devops/container/openshift.html), [Kubernetes](wiki/devops/devops.html) |
