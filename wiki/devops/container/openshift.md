@@ -104,6 +104,14 @@
       sudo ansible-playbook -i inventory/example.localhost playbooks/deploy_cluster.yml
       ```
 
+      ```bash
+      如果节点系统配置不够需要忽略检测
+      [OSEv3:vars]
+      openshift_disable_check=disk_availability,docker_storage,memory_availability,docker_image_availability
+      指定route域名后缀
+      openshift_master_default_subdomain=staging.iot.com
+      ```
+
 3. **生产级别硬件需求**
    1. 云平台集群配置(<1000 pod)
 
@@ -175,8 +183,6 @@
    7. 配置集群
       > master集群环境下不建议直接修改配置文件(除非手动部署组件), 应该使用ansible对集群进行更新
 
-      > 已知在所有master节点修改/etc/origin/master/master-config.yml的imagePolicyConfig.allowedRegistriesForImport会出现无法启动问题, 错误日志内容为配置文件格式不正确
-
 5. **租户(namespace)**
    1. 权限
       ```bash 
@@ -201,8 +207,8 @@
 6. **持久化存储(pv)**
    1. nfs服务器
       ```bash 
-      安装后主要关闭selinux
-      安装后注意防火墙iptables, firewalld
+      安装后注意关闭selinux
+      安装后注意关闭或开放防火墙iptables, firewalld
       安装后注意存储目录权限
       ```
       
