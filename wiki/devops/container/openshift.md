@@ -173,6 +173,7 @@
 
 4. **基础配置**
    1. openshift-master节点image registry的配置
+
       ```bash 
       sudo vi /etc/origin/master/master-config.yaml
       
@@ -188,6 +189,7 @@
       ```
       
    2. 所有节点dns的配置
+
       ```bash 
       默认所有节点pod都将使用所在的host作为dns地址, 并不会讲host的dns拷贝到容器内, 所以所有节点需要安装dnsmasq, 并默认启动, 外部dns server配置到dnsmasq的配置文件中即可
       sudo vi /etc/dnsmasq.conf
@@ -199,11 +201,13 @@
       ```
 
    3. docker的配置
+
       ```bash 
       sudo vi /etc/docker/daemon.json
       ```
       
    4. gitlab的配置
+
       ```bash 
       Generate the PEM or DER encoded public certificate from your private key certificate.
       Copy the public certificate file only into the /etc/gitlab/trusted-certs directory.
@@ -211,6 +215,7 @@
       ```
       
    5. 反序列化pod缓存, 如果pod<1000, 建议设置为1000, 默认为50000, 越大越占用master内存
+
       ```bash 
       sudo vi /etc/origin/master/master-config.yaml
       
@@ -221,6 +226,7 @@
       ```
       
    6. route域名后缀配置
+
       ```bash 
       sudo vi /etc/origin/master/master-config.yaml
       
@@ -229,10 +235,12 @@
       ```
    
    7. 配置集群
+
       > master集群环境下不建议直接修改配置文件(除非手动部署组件), 应该使用ansible对集群进行更新
 
 5. **租户(namespace)**
    1. 权限
+
       ```bash 
       build阶段需要root权限执行时,需要为租户开放权限
       oc edit scc privileged
@@ -244,6 +252,7 @@
       ```
    
    2. 集群管理员(cluster role)
+
       ```bash
       登录集群管理员
       oc login -u system:admin -n default --config=/etc/origin/master/admin.kubeconfig
@@ -254,6 +263,7 @@
       
 6. **持久化存储(pv)**
    1. nfs服务器
+
       ```bash 
       安装后注意关闭selinux
       安装后注意关闭或开放防火墙iptables, firewalld
@@ -261,7 +271,9 @@
       ```
       
    2. 创建pv
+
       > nfs挂载, 核心业务不建议使用nfs
+
       ```bash 
       切换到system:admin用户, pv为全局共享
         {
@@ -291,11 +303,13 @@
       
 7. **链接构建**
    1. 编译型语言第一次构建可执行程序(比如jar), 这个构建过程可能有很多依赖要下载, 很多环境配置要满足, 所以该镜像不建议直接运行
+
       ```bash 
       build镜像一般进行环境初始化, 依赖下载等, 比较占用空间
       ```
       
    2. 第二次构建从第一次构建的镜像中读取二进制程序(比如jar)用于运行时, 该镜像仅需要安装运行时环境, 所以该镜像作为运行时镜像
+
       ```bash 
       runtime镜像一般执行启动命令
       ```
@@ -304,18 +318,32 @@
 
 8. **Java项目链接构建**
    1. 构建jar
+
       ```bash 
       docker pull wildfly14-openshift:latest
       这个镜像建议使用源码编译制作, 以便随时修改编译环境, 比如创建授权某个目录等
       ```
       
    2. 构建runtime
+
       ```bash 
       docker pull openjdk18-openshift:latest
       这个镜像没有源码, 可以根据日志排查问题, 比如更改JVM参数
       ```
       
    3. 部署时指定jvm参数
+
       ```bash 
       根据源码shell可以看出, 默认JVM参数会加载pod的memory, 以及default配置, 其中default配置-XX:MaxMetaspaceSize=100m非常小, 如果需要覆盖需要指定该变量JAVA_OPTS_APPEND, 另外从源码中可以看出JAVA_OPTIONS这个变量加载时会被default覆盖, 这里需要注意
       ```
+
+9. **prometheus监控**
+    
+   > 按照上面配置安装prometheus后, 登录时需要走openshift认证, 使用的用户需要加入到prometheus所属namespace
+
+   参考命令如下
+   ```bash
+   oc project openshift-metrics
+   oc adm policy add-role-to-user admin developer
+   ```
+   
