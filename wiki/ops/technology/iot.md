@@ -2,7 +2,8 @@
 
 1. **MQTT**
    > emqx集群部署, 需要先启动leader节点, 其他节点可以采用kubernetes复制方式加入到主节点
-   ```
+   
+   ```text
    leader节点指定名称
    EMQX_NAME=emqx
 
