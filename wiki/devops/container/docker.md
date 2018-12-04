@@ -49,4 +49,4 @@
    2. 配置github token(Minishift会去github上验证，并调用其api，不配置token将没有api权限)
       ```bash
       export MINISHIFT_GITHUB_API_TOKEN=<token_ID>
-      ``
+      ```

@@ -104,12 +104,62 @@
       sudo ansible-playbook -i inventory/example.localhost playbooks/deploy_cluster.yml
       ```
 
+      参考配置如下
       ```bash
-      如果节点系统配置不够需要忽略检测
+      [OSEv3:children]
+      masters
+      nodes
+      etcd
+      lb
+      glusterfs
+
       [OSEv3:vars]
+      ansible_ssh_user=root
+      openshift_deployment_type=origin
       openshift_disable_check=disk_availability,docker_storage,memory_availability,docker_image_availability
-      指定route域名后缀
-      openshift_master_default_subdomain=staging.iot.com
+
+      openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider'}]
+
+      openshift_master_cluster_method=native
+      openshift_master_cluster_hostname=openshift-internal.iot.com
+      openshift_master_cluster_public_hostname=openshift-cluster.iot.com
+
+      openshift_master_default_subdomain=openshift.iot.com
+
+      openshift_storage_glusterfs_block_host_vol_size=40
+
+      openshift_prometheus_storage_type=pvc
+      openshift_prometheus_alertmanager_pvc_name=alertmanager
+      openshift_prometheus_alertbuffer_pvc_size=10G
+      openshift_prometheus_pvc_access_modes=['ReadWriteOnce']
+
+      [masters]
+      openshift-master001
+      openshift-master002
+      openshift-master003
+
+      [etcd]
+      openshift-master001
+      openshift-master002
+      openshift-master003
+
+      [lb]
+      openshift-lb
+
+      [nodes]
+      openshift-master001 openshift_node_group_name='node-config-master'
+      openshift-master002 openshift_node_group_name='node-config-master'
+      openshift-master003 openshift_node_group_name='node-config-master'
+      openshift-node001 openshift_node_group_name='node-config-compute'
+      openshift-node002 openshift_node_group_name='node-config-compute'
+      openshift-infra001 openshift_node_group_name='node-config-infra'
+      openshift-infra002 openshift_node_group_name='node-config-infra'
+      openshift-lb openshift_node_group_name='node-config-infra'
+
+      [glusterfs]
+      openshift-lb glusterfs_devices='["/dev/sdb"]'
+      openshift-infra001 glusterfs_devices='["/dev/sdb"]'
+      openshift-infra002 glusterfs_devices='["/dev/sdb"]'
       ```
 
 3. **生产级别硬件需求**
