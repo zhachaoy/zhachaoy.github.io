@@ -1,9 +1,16 @@
 # Docker
 
 1. **Docker Volume**
+
+   ![avatar](wiki/devops/container/img/docker-volume.png)
+
    > 想要了解Docker Volume，首先我们需要知道Docker的文件系统是如何工作的。Docker镜像是由多个文件系统（只读层）叠加而成。当我们启动一个容器的时候，Docker会加载只读镜像层并在其上（译者注：镜像栈顶部）添加一个读写层。如果运行中的容器修改了现有的一个已经存在的文件，那该文件将会从读写层下面的只读层复制到读写层，该文件的只读版本仍然存在，只是已经被读写层中该文件的副本所隐藏。当删除Docker容器，并通过该镜像重新启动时，之前的更改将会丢失。在Docker中，只读层及在顶部的读写层的组合被称为Union File System（联合文件系统）。
    
    > 为了能够保存（持久化）数据以及共享容器间的数据，Docker提出了Volume的概念。简单来说，Volume就是目录或者文件，它可以绕过默认的联合文件系统，而以正常的文件或者目录的形式存在于宿主机上。
+
+   > volume保存在hosts的/var/lib/docker/volumes/, 这个文件系统不允许被非docker的程序改变
+
+   > 除了volume, docker还有其他持久化方案, 比如Bind mounts直接使用host的文件系统(不建议使用), tmpfs mounts持久化敏感数据到内存
 
    ```bash
    使用新建volume持久化镜像的/data目录
@@ -18,11 +25,6 @@
    ```bash
    使用主机目录持久化镜像的/data目录
    docker run -v /home/adrian/data:/data debian ls /data
-   ```
-
-   ```bash
-   共享数据
-   docker run -it -h NEWCONTAINER --volumes-from vol-test debian /bin/bash
    ```
 
    ```bash

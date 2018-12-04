@@ -6,7 +6,7 @@
 | DevOps | Container |  [Docker](wiki/devops/container/docker.md), [OpenShift](wiki/devops/container/openshift.html), [Kubernetes](wiki/devops/devops.html) |
 | DevOps | Env Config | [Ansible](wiki/devops/devops.html) |
 | 开发 | 开发框架 |  [Service Mesh](wiki/dev/dev.html), [Micro Service](wiki/dev/dev.html) |
-| 开发 | 编码规范 |  [Google Style](wiki/dev/dev.html), [Alibaba Style](wiki/dev/dev.html) |
+| 开发 | 编码规范 |  [编程的智慧](http://www.yinwang.org/blog-cn/2015/11/21/programming-philosophy), [Google Style](http://google.github.io/styleguide/javaguide.html), [Alibaba Style](https://edu.aliyun.com/certification/cldt02?utm_content=m_30791) |
 | 开发 | 版本控制 |  [Git](wiki/dev/dev.html) |
 | 开发 | 单元测试 |  [xUnit](wiki/dev/dev.html) |
 | Java | EE |  [Maven](wiki/java/java.html), [Spring Cloud](wiki/java/java.html), [MyBatis](wiki/java/java.html) |
