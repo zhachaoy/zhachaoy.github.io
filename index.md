@@ -28,5 +28,5 @@
 | Linux | 内核(shell) |  [内核定制](wiki/linux/linux.html), [内存参数优化](wiki/linux/linux.html), [脚本编程](wiki/linux/linux.html) |
 | 网络 | 接入层(L2) |  [VTP](wiki/network/network.html), [SPF](wiki/network/network.html), [Trunk](wiki/network/network.html), [端口安全](wiki/network/network.html) |
 | 网络 | 汇聚层 |  [动态路由(OSPF)](wiki/network/network.html), [静态路由](wiki/network/network.html), [端口汇聚(EC)](wiki/network/network.html), [MSTP VRRP](wiki/network/network.html) |
-| 网络 | 核心层(L4) |  [防火墙](wiki/network/network.html), [路由器](wiki/network/network.html), [VPN](), [负载均衡(LB)](wiki/network/network.html) |
+| 网络 | 核心层(L4) |  [防火墙](wiki/network/l4/firewall.md), [路由器](wiki/network/network.html), [VPN](), [负载均衡(LB)](wiki/network/network.html) |
 | 网络 | 互联层 |  [专线(QOS)](wiki/network/network.html), [异地灾备](wiki/network/network.html), [异地多活](wiki/network/network.html), [按SET部署](wiki/network/network.html) |

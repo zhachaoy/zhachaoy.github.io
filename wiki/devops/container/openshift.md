@@ -67,17 +67,16 @@
       ```
       
    4. 在ansible节点配置ssh免密登录, 配置本地hosts
+
+      注意: 给所有节点推送公钥
       ```bash 
       sudo ssh-keygen
-      ```
-      
-      给所有节点推送公钥
-      ```bash 
+
       for host in openshift-lb openshift-master001 openshift-master002 openshift-master003 openshift-node001 openshift-node002 openshift-infra001 openshift-infra002
         do ssh-copy-id -i ~/.ssh/id_rsa.pub $host; done
       ```
       
-      修改所有节点本地路由记录
+      注意: 修改所有节点本地路由记录, 其中openshift-internal.iot.com内部地址必须解析
       ```bash 
       sudo vi /etc/hosts
       172.16.135.95    openshift-lb
@@ -88,7 +87,11 @@
       172.16.135.87    openshift-node002
       172.16.135.88    openshift-infra001
       172.16.135.92    openshift-infra002
+      172.16.135.95    openshift-internal.iot.com
       ```
+
+      启用NetworkManager, 修改所有节点网卡
+      NM_CONTROLLED="yes"
    
    5. 执行ansible playbook进行安装(inventory/hosts.*文件请按照需求配置集群节点, 可参考官方文档中的样例)
       ```bash 
@@ -96,10 +99,17 @@
       git clone https://github.com/openshift/openshift-ansible
       cd openshift-ansible
       git checkout release-3.10
+
+      如果安装3.11版本需要切换至release-3.11分支, 需要所有节点手动安装3.11仓库(原因是centos7.6发布冻结了仓库)
+      yum install -y centos-release-openshift-origin311
+      git checkout release-3.11
       
       以下执行前先参考官方example列出的不同集群方式, 将文件放在inventory目录下, 并在执行时指定, 默认该目录下有单机版文件hosts.localhost
       sudo ansible-playbook -i inventory/example.localhost playbooks/prerequisites.yml
       sudo ansible-playbook -i inventory/example.localhost playbooks/deploy_cluster.yml
+
+      如果安装失败请执行卸载
+      sudo ansible-playbook -i inventory/example.localhost playbooks/adhoc/uninstall.yml
       ```
 
       参考配置如下
