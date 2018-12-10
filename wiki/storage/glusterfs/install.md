@@ -10,19 +10,19 @@
    cd /data
 
    创建400G虚拟块设备
-   dd if=/dev/zero of=gluster_disk bs=8M count=51200
+   dd if=/dev/zero of=glusterfs_disk bs=8M count=51200
 
    授权
-   chmod 777 gluster_disk
+   chmod 777 glusterfs_disk
 
    声明设备输入输出
-   losetup /dev/loop gluster_disk
+   losetup /dev/loop1 glusterfs_disk
 
    可以在/dev目录查看到loop定义
 
    删除时执行以下命令, 即可释放磁盘空间
-   losetup -d /dev/loop
-   rm /data/gluster_disk
+   losetup -d /dev/loop1
+   rm /data/glusterfs_disk
    reboot
    ```
 
