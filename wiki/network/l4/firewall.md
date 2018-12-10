@@ -67,3 +67,12 @@
    
    4. 什么是服务service
       > iptables时代习惯使用端口号来匹配规则，但是如果某一个服务的端口号改变了，那就要同时更改iptables的规则，十分不方便，同时也不方便阅读理解。
+
+   5. 常用命令
+      ```
+      查看开放端口
+      firewall-cmd --zone=public --list-ports
+
+      查看各区域情况
+      firewall-cmd --get-active-zones
+      ```

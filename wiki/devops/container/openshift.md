@@ -271,16 +271,8 @@
       oc login -u system:admin -n xxx
       ```
       
-6. **持久化存储(pv)**
-   1. nfs服务器
-
-      ```bash 
-      安装后注意关闭selinux
-      安装后注意关闭或开放防火墙iptables, firewalld
-      安装后注意存储目录权限
-      ```
-      
-   2. 创建pv
+6. **持久化存储(pv)**      
+   1. 创建pv
 
       > nfs挂载, 核心业务不建议使用nfs
 

@@ -15,18 +15,20 @@
 | Python | 3.5 |  [Keystone](wiki/python/python.html), [NetBox](wiki/python/python.html)   |
 | Go | 1.0 |  [Casbin](wiki/go/go.html)  |
 | 中间件 | 数据库 |  [MySQL](wiki/middleware/middleware.html), [PostgreSQL](wiki/middleware/middleware.html), [MongoDB](wiki/middleware/middleware.html) |
-| 中间件 | 消息队列 |  [Kafka](wiki/middleware/middleware.html), [RabbitMQ](wiki/middleware/middleware.html) |
-| 中间件 | 负载均衡 |  [Nginx](wiki/middleware/middleware.html), [HAProxy](wiki/middleware/middleware.html) |
-| 中间件 | 其他技术 |  [Keepalived](wiki/middleware/middleware.html), [Consul](wiki/middleware/middleware.html), [Confd](wiki/middleware/middleware.html), [Etcd](wiki/middleware/middleware.html) |
-| 运维 | 运维体系 |  [标准化](wiki/ops/ops.html), [工具化](wiki/ops/ops.html), [平台化](wiki/ops/ops.html), [智能化](wiki/ops/ops.html) |
-| 运维 | 运维模式 |  [Pet](wiki/ops/ops.html), [Cattle](wiki/ops/ops.html) |
-| 运维 | 运维技术 |  [OpenStack](wiki/ops/ops.html), [Vmware Vsphere](wiki/ops/ops.html), [NFS](wiki/ops/ops.html), [SAN/NAS](wiki/ops/ops.html), [GlusterFS](wiki/ops/technology/gluster.html), [IOT](wiki/ops/technology/iot.md), [公有云](wiki/ops/ops.html) |
-| Linux | CPU |  [运行级别](wiki/linux/linux.html), [上下文](wiki/linux/linux.html), [运行队列](wiki/linux/linux.html), [进程调度](wiki/linux/linux.html), [系统调用](wiki/linux/linux.html), [CPU管理](wiki/linux/linux.html) |
-| Linux | 内存 |  [虚拟内存](), [Swap换入换出](wiki/linux/linux.html), [内存寻址](), [内存管理]() |
-| Linux | I/O(磁盘) |  [缺页中断](wiki/linux/linux.html), [IOPS](), [IO管理](wiki/linux/linux.html), [VFS](wiki/linux/linux.html) |
-| Linux | I/O(网络) |  [TCP/IP](wiki/linux/linux.html), [IO模型](), [Bonding](wiki/linux/linux.html), [Bridge](wiki/linux/linux.html), [网络管理](wiki/linux/linux.html) |
-| Linux | 内核(shell) |  [内核定制](wiki/linux/linux.html), [内存参数优化](wiki/linux/linux.html), [脚本编程](wiki/linux/linux.html) |
-| 网络 | 接入层(L2) |  [VTP](wiki/network/network.html), [SPF](wiki/network/network.html), [Trunk](wiki/network/network.html), [端口安全](wiki/network/network.html) |
-| 网络 | 汇聚层 |  [动态路由(OSPF)](wiki/network/network.html), [静态路由](wiki/network/network.html), [端口汇聚(EC)](wiki/network/network.html), [MSTP VRRP](wiki/network/network.html) |
-| 网络 | 核心层(L4) |  [防火墙](wiki/network/l4/firewall.md), [路由器](wiki/network/network.html), [VPN](), [负载均衡(LB)](wiki/network/network.html) |
-| 网络 | 互联层 |  [专线(QOS)](wiki/network/network.html), [异地灾备](wiki/network/network.html), [异地多活](wiki/network/network.html), [按SET部署](wiki/network/network.html) |
+| 中间件 | 消息队列 |  [Kafka], [RabbitMQ] |
+| 中间件 | 负载均衡 |  [Nginx], [HAProxy]|
+| 中间件 | 配置管理 |  [Keepalived], [Consul], [Confd], [Etcd] |
+| 运维 | 运维体系 |  [标准化], [工具化], [平台化], [智能化] |
+| 运维 | 运维模式 |  [Pet], [Cattle] |
+| 运维 | 运维技术 |  [OpenStack], [Vmware Vsphere], [SAN/NAS], [IOT](wiki/ops/technology/iot.md), [公有云] |
+| Linux | CPU |  [运行级别], [上下文], [运行队列], [进程调度], [系统调用], [CPU管理] |
+| Linux | 内存 |  [虚拟内存], [Swap换入换出], [内存寻址], [内存管理] |
+| Linux | I/O(磁盘) |  [缺页中断], [IOPS], [IO管理], [VFS] |
+| Linux | I/O(网络) |  [TCP/IP], [IO模型], [Bonding], [Bridge], [网络管理] |
+| Linux | 内核(shell) |  [内核定制], [内存参数优化], [脚本编程] |
+| 网络 | 接入层(L2) |  [VTP], [SPF], [Trunk], [端口安全] |
+| 网络 | 汇聚层 |  [动态路由(OSPF)], [静态路由], [端口汇聚(EC)], [MSTP VRRP] |
+| 网络 | 核心层(L4) |  [防火墙](wiki/network/l4/firewall.md), [路由器], [VPN], [负载均衡(LB)] |
+| 网络 | 互联层 |  [专线(QOS)], [异地灾备], [异地多活], [按SET部署] |
+| 存储 | GlusterFS |  [安装部署](wiki/storage/glusterfs/install.html) |
+| 存储 | NFS |  [安装部署](wiki/storage/nfs/install.html) |
