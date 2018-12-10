@@ -20,7 +20,7 @@
 | 中间件 | 配置管理 |  [Keepalived], [Consul], [Confd], [Etcd] |
 | 运维 | 运维体系 |  [标准化], [工具化], [平台化], [智能化] |
 | 运维 | 运维模式 |  [Pet], [Cattle] |
-| 运维 | 运维技术 |  [OpenStack], [Vmware Vsphere], [SAN/NAS], [IOT](wiki/ops/technology/iot.md), [公有云] |
+| 运维 | 运维平台 |  [OpenStack], [Vmware Vsphere], [SAN/NAS], [IOT](wiki/ops/technology/iot.md), [公有云] |
 | Linux | CPU |  [运行级别], [上下文], [运行队列], [进程调度], [系统调用], [CPU管理] |
 | Linux | 内存 |  [虚拟内存], [Swap换入换出], [内存寻址], [内存管理] |
 | Linux | I/O(磁盘) |  [缺页中断], [IOPS], [IO管理], [VFS] |
