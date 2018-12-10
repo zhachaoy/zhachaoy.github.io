@@ -250,19 +250,16 @@
 
 5. **租户(namespace)**
    1. 权限
-
       ```bash 
-      build阶段需要root权限执行时,需要为租户开放权限
+      build阶段需要root权限执行时, 需要为租户开放权限
       oc edit scc privileged
       在users里增加指定租户的builder用户
       
-      depoly阶段需要root权限执行时,需要为租户开放权限
-      oc edit scc anyuid
-      在users里增加指定租户的default用户
+      depoly阶段需要root权限执行时, 需要为租户开放权限
+      oc adm policy add-scc-to-user anyuid system:serviceaccount:[namespace]:default
       ```
    
    2. 集群管理员(cluster role)
-
       ```bash
       登录集群管理员
       oc login -u system:admin -n default --config=/etc/origin/master/admin.kubeconfig
