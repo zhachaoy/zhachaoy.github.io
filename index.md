@@ -30,3 +30,5 @@
 | 网络 | 核心层(L4) | [防火墙](wiki/network/l4/firewall.md), [路由器], [VPN], [负载均衡(LB)] |
 | 网络 | 互联层 | [专线(QOS)], [异地灾备], [异地多活], [按SET部署] |
 | 存储 | 文件存储 | [GlusterFS](wiki/storage/file/glusterfs.md), [NFS](wiki/storage/file/nfs.md) |
+| 存储 | 块存储 | [SAN], [DAS] |
+| 存储 | 对象存储 | [Swift], [Ceph] |

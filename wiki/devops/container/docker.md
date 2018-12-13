@@ -50,3 +50,5 @@
       ```bash
       export MINISHIFT_GITHUB_API_TOKEN=<token_ID>
       ```
+
+3. **Docker Network**
