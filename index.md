@@ -13,10 +13,10 @@
 | Java | SE | [自动包装], [泛型], [枚举], [静态导入], [可变参数], [集合类], [线程类], [线程池], [异步并发锁] |
 | Python | | [Keystone], [NetBox] |
 | Go | | [Casbin] |
-| 中间件 | 数据库 | [MySQL], [PostgreSQL], [MongoDB] |
+| 中间件 | 数据库 | [Redis](wiki/middleware/database/redis.md), [MySQL], [PostgreSQL], [MongoDB] |
 | 中间件 | 消息队列 | [Kafka], [RabbitMQ] |
 | 中间件 | 负载均衡 | [Nginx], [HAProxy]|
-| 中间件 | | [Keepalived], [Consul], [Confd], [Etcd] |
+| 中间件 | | [Keepalived], [Consul], [Confd], [Etcd](wiki/middleware/etcd.md) |
 | 运维 | 运维体系 | [标准化], [工具化], [平台化], [智能化] |
 | 运维 | 运维模式 | [Pet], [Cattle] |
 | 运维 | 运维平台 | [OpenStack], [Vmware Vsphere], [SAN/NAS], [IOT](wiki/ops/technology/iot.md), [公有云] |
